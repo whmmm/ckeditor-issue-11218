@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+
+<body>
+    <noscript>
+        <strong>We're sorry but jzjx-components doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong>
+    </noscript>
+    <div id="app" style="height: 500px;width: 80%;border:1px solid #000;margin-top:5em;">
+
+    </div>
+    <script src="ckeditor/inline/ckeditor.js"></script>
+    <script>
+        var ckeditor;
+        var config = {
+            htmlSupport: {
+                // 允许图片的全部属性
+                allow: [
+                    {
+                        name: /.*/,
+                        // fixme: attributes must exclude `src` attruibute,  such as `  ['data-mathml', 'img', 'data-*', 'width', 'height', 'style', 'class', 'attr-*'] `
+                        attributes: true,
+                        classes: true,
+                        styles: true
+                    }
+                ]
+            },
+            toolbar: [
+                'Undo', 'Redo', 'bold', 'italic', 'underline',
+                'strikethrough', 'subscript', 'superscript',
+                'removeFormat',
+                'MathType', 'ChemType'
+            ],
+            removePlugins: ['SimpleUploadAdapter']
+        }
+
+        window.InlineEditor
+            .create(document.querySelector('#app'), config)
+            .then((it) => {
+                ckeditor = it
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+    </script>
+
+</html>

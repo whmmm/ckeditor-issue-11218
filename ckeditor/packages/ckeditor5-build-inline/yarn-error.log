@@ -1,0 +1,104 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\94258\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\94258\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\whmmm\env\jdk-11\bin;C:\whmmm\env\maven\bin;C:\Program Files\Git\cmd;C:\Program Files\Go\bin;C:\Program Files (x86)\NetSarang\Xshell 7;C:\Program Files (x86)\NetSarang\Xftp 7;C:\msys64\mingw64\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\sbt\bin;C:\Users\94258\Downloads\apache-jmeter-5.4.1\apache-jmeter-5.4.1\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet;C:\Program Files\Process Lasso;C:\Program Files\nodejs;C:\Users\94258\AppData\Local\Microsoft\WindowsApps;C:\Users\94258\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\94258\go\bin;C:\Users\94258\AppData\Local\Yarn\bin;C:\Users\94258\AppData\Local\Programs\Fiddler;C:\Users\94258\.dotnet\tools;C:\Users\94258\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.13.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 20.205.243.166:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)
+
+npm manifest: 
+  {
+    "name": "@ckeditor/ckeditor5-build-inline",
+    "version": "31.1.0",
+    "description": "The inline editor build of CKEditor 5 – the best browser-based rich text editor.",
+    "keywords": [
+      "ckeditor5-build",
+      "ckeditor",
+      "ckeditor5",
+      "ckeditor 5",
+      "wysiwyg",
+      "rich text",
+      "editor",
+      "html",
+      "contentEditable",
+      "editing",
+      "operational transformation",
+      "ot",
+      "collaboration",
+      "collaborative",
+      "real-time",
+      "framework"
+    ],
+    "main": "./build/ckeditor.js",
+    "files": [
+      "build",
+      "ckeditor5-metadata.json"
+    ],
+    "dependencies": {
+      "@ckeditor/ckeditor5-adapter-ckfinder": "^31.1.0",
+      "@ckeditor/ckeditor5-autoformat": "^31.1.0",
+      "@ckeditor/ckeditor5-basic-styles": "^31.1.0",
+      "@ckeditor/ckeditor5-block-quote": "^31.1.0",
+      "@ckeditor/ckeditor5-ckfinder": "^31.1.0",
+      "@ckeditor/ckeditor5-cloud-services": "^31.1.0",
+      "@ckeditor/ckeditor5-easy-image": "^31.1.0",
+      "@ckeditor/ckeditor5-editor-inline": "^31.1.0",
+      "@ckeditor/ckeditor5-essentials": "^31.1.0",
+      "@ckeditor/ckeditor5-heading": "^31.1.0",
+      "@ckeditor/ckeditor5-image": "^31.1.0",
+      "@ckeditor/ckeditor5-indent": "^31.1.0",
+      "@ckeditor/ckeditor5-link": "^31.1.0",
+      "@ckeditor/ckeditor5-list": "^31.1.0",
+      "@ckeditor/ckeditor5-media-embed": "^31.1.0",
+      "@ckeditor/ckeditor5-paragraph": "^31.1.0",
+      "@ckeditor/ckeditor5-paste-from-office": "^31.1.0",
+      "@ckeditor/ckeditor5-table": "^31.1.0",
+      "@ckeditor/ckeditor5-typing": "^31.1.0"
+    },
+    "devDependencies": {
+      "@ckeditor/ckeditor5-core": "^31.1.0",
+      "@ckeditor/ckeditor5-dev-utils": "^26.0.0",
+      "@ckeditor/ckeditor5-dev-webpack-plugin": "^26.0.0",
+      "@ckeditor/ckeditor5-theme-lark": "^31.1.0",
+      "postcss-loader": "^3.0.0",
+      "raw-loader": "^4.0.1",
+      "style-loader": "^1.2.1",
+      "terser-webpack-plugin": "^3.0.2",
+      "webpack": "^4.43.0",
+      "webpack-cli": "^3.3.11"
+    },
+    "engines": {
+      "node": ">=12.0.0",
+      "npm": ">=5.7.1"
+    },
+    "author": "CKSource (http://cksource.com/)",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://ckeditor.com/ckeditor-5",
+    "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ckeditor/ckeditor5.git",
+      "directory": "packages/ckeditor5-build-inline"
+    },
+    "scripts": {
+      "build": "webpack --mode production",
+      "preversion": "npm run build"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
